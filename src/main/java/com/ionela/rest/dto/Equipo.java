@@ -26,7 +26,7 @@ public class Equipo {
 	private Facultad facultad;
 	
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "num_serie")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "equipo")
 	private List<Reserva> reservas;
 
 	public Equipo(String num_serie, String nombre, Facultad facultad, List<Reserva> reservas) {

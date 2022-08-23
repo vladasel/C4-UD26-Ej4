@@ -23,11 +23,11 @@ public class Reserva {
 	private Long id;
 	
 	@ManyToOne
-	@JoinColumn(name="dni")
+	@JoinColumn(name="investigador")
 	private Investigador investigador;
 	
 	@ManyToOne
-	@JoinColumn(name="num_serie")
+	@JoinColumn(name="equipo")
 	private Equipo equipo;
 	
 	@Column
